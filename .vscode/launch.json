@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< HEAD
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
@@ -23,5 +24,20 @@
             "args": [],
             "cwd": "${workspaceFolder}"
         }
+=======
+            "type": "cmake",
+            "request": "launch",
+            "name": "CMake: Configure project",
+            "cmakeDebugType": "configure",
+            "clean": false,
+            "configureAll": false
+        },
+        {
+            "name": "(Windows) Attach",
+            "type": "cppvsdbg",
+            "request": "attach",
+        }
+
+>>>>>>> 4aed561c7d981d905a9e809aa03d50f6237915ce
     ]
 }

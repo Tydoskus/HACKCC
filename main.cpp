@@ -1,12 +1,14 @@
 #include <iostream>
 #include <cmath>
 #include <random>
+
 using namespace std;
 
 const double R = 3963.1; // in miles
+const double PI = M_PI;
 
 double toRadians(double degree) {
-    return degree * (M_PI / 180.0); //convert to rad by times with pi/180
+    return degree * (PI / 180.0); //convert to rad by times with pi/180
 }
 
 double calculate_distance(double lat1, double lon1, double lat2, double lon2)
@@ -37,15 +39,17 @@ void sendAlert(double newDistance)
 int main() {
     cout << "testing" << endl;
 
-    double amb_lat = rand() % 181 -90;
+    // the random is just for the demo purpose!
 
+    double amb_lat = rand() % 181 -90;
     double amb_lon = rand() % 361 -180;
 
-    // need to find car on the route of the ambulance
+    // need to find cars on the route of the ambulance
+    //need latitude and longtitude of several points on the path
 
     double veh_lat = rand() % 181 -90; // this car should be found to be on the route of the ambulance
 
-    double veh_lon = rand() % 361 -180;// this car should be found to be on the route of the ambulance
+    double veh_lon = rand() % 361 -180;// still that car
 
     double distance = calculate_distance(amb_lat, amb_lon, veh_lat, veh_lon);
      
