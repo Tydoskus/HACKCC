@@ -40,18 +40,20 @@ int main() {
 
     double amb_lon = rand() % 361 -180;
 
-    double veh_lat = rand() % 181 -90;
+    // need to find car on the route of the ambulance
 
-    double veh_lon = rand() % 361 -180;
+    double veh_lat = rand() % 181 -90; // this car should be found to be on the route of the ambulance
+
+    double veh_lon = rand() % 361 -180;// this car should be found to be on the route of the ambulance
 
     double distance = calculate_distance(amb_lat, amb_lon, veh_lat, veh_lon);
      
-    cout << "distance" << distance << endl;
+    cout << "distance: " << distance << endl;
 
     if (distance <= 1)
     {
         //sendAlert(distance);
-        cout << "Alert" << endl;
+        cout << "Alert!!! Ambulance is on the way. Pull to the right." << endl;
     }
 
     return 0;
