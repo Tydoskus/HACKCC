@@ -36,24 +36,6 @@ void sendAlert(double newDistance)
 
 int main() {
     cout << "testing" << endl;
-    double amb_lat = rand() % 181 -90;
-
-    double amb_lon = rand() % 361 -180;
-
-    double veh_lat = rand() % 181 -90;
-
-    double veh_lon = rand() % 361 -180;
-
-    double distance = calculate_distance(amb_lat, amb_lon, veh_lat, veh_lon);
-     
-    cout << "distance" << distance << endl;
-
-    if (distance <= 1)
-    {
-        //sendAlert(distance);
-        cout << "Alert" << endl;
-    }
-
     return 0;
 }
 
