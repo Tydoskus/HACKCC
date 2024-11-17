@@ -5,6 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< HEAD
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceFolder}/<executable file>",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+=======
             "type": "cmake",
             "request": "launch",
             "name": "CMake: Configure project",
@@ -18,5 +38,6 @@
             "request": "attach",
         }
 
+>>>>>>> 4aed561c7d981d905a9e809aa03d50f6237915ce
     ]
 }
