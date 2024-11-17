@@ -36,6 +36,26 @@ void sendAlert(double newDistance)
 
 int main() {
     cout << "testing" << endl;
+
+    double amb_lat = rand() % 181 -90;
+
+    double amb_lon = rand() % 361 -180;
+
+    // need to find car on the route of the ambulance
+
+    double veh_lat = rand() % 181 -90; // this car should be found to be on the route of the ambulance
+
+    double veh_lon = rand() % 361 -180;// this car should be found to be on the route of the ambulance
+
+    double distance = calculate_distance(amb_lat, amb_lon, veh_lat, veh_lon);
+     
+    cout << "distance: " << distance << endl;
+
+    if (distance <= 1)
+    {
+        //sendAlert(distance);
+        cout << "Alert!!! Ambulance is on the way. Pull to the right." << endl;
+    }
     return 0;
 }
 
