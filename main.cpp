@@ -20,21 +20,21 @@ def calculate_distance( lat1,  lon1,  lat2, lon2):
     
     return distance;
 
-    #cout << "testing" << endl;
-     amb_lat = 0;
-     amb_lon = 0;
+#cout << "testing" << endl;
+amb_lat = 0;
+amb_lon = 0;
 
-    # num of cars on the route = ???
-    # while ??? > 0
+# num of cars on the route = ???
+# while ??? > 0
 
-     veh_lat =0; 
-     veh_lon = 0;
-     distance = calculate_distance(amb_lat, amb_lon, veh_lat, veh_lon);
+veh_lat =0; 
+veh_lon = 0;
+distance = calculate_distance(amb_lat, amb_lon, veh_lat, veh_lon);
      
-    print ("distance: " , distance , end="\n")
+print ("distance: " , distance , end="\n")
 
-    if distance <= 1:
-        print ("Alert!!! Ambulance is on the way. Pull to the right." )
+if distance <= 1:
+    print ("Alert!!! Ambulance is on the way. Pull to the right." )
     
 
 
