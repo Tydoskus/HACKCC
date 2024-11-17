@@ -60,7 +60,6 @@ int main() {
         //sendAlert(distance);
         cout << "Alert!!! Ambulance is on the way. Pull to the right." << endl;
     }
-
     return 0;
 }
 
